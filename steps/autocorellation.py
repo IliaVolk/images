@@ -1,5 +1,5 @@
 import numpy
-from numba import jit, types
+from numba import jit
 
 @jit
 def autocorellation(image):
@@ -10,8 +10,9 @@ def autocorellation(image):
             s1 = 0.0
             s2 = 0.0
             for s in range(l, m):
-                s1 += image[s, tetha]**2
-                s2 += image[s, tetha]*image[s-1, tetha]
-
-            result[l,tetha] = s1 / s2 if s2 != 0 else 1
+                s2 += image[s, tetha]**2
+                s1 += image[s, tetha]*image[s-l, tetha]
+            if s2 == 0:
+                print('div by zero')
+            result[l,tetha] = s1 / s2 if s2 != 0 else 0
     return result

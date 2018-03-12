@@ -25,12 +25,12 @@ const showTable = json => {
     json.forEach((data) => {
         const {image, sign, diffs} = data;
         const $tr = $(`<tr>
-                <td><img src="${image}" width="100"></td>
+                <td><img src="${image}" width="100">${image}</td>
                 <td><img src="${sign}" width="100"></td>
             </tr>`);
         for (const [image, diff] of diffs) {
             $tr.append($(`
-                <td>${diff}: <img src="${image}" width="100"></td>
+                <td>${diff}: <img src="${image}" width="100">${image}</td>
             `))
         }
         $table.append($tr);

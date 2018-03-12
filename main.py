@@ -9,27 +9,35 @@ from skimage.transform import radon, rescale, rotate
 from skimage.color import rgb2gray
 import numpy
 import scipy.ndimage
-from steps.autocorellation import  autocorellation
+from steps.autocorellation import autocorellation
 from steps.interleaving import interleaving
 from steps.twodfilter import twodfilter
 from steps.trueshold import trueshold
 from steps.xor import xor
 from steps.diff import diff
 from steps.log import log_mapping
-#images = (imread('image.png', as_grey=True), imread('image2.png', as_grey=True))
-images = [imread('11.jpg', as_grey=True),
-          imread('12.jpg', as_grey=True),
-          imread('13.jpg', as_grey=True),
-          imread('14.jpg', as_grey=True),
-          imread('15.jpg', as_grey=True),
-          imread('17.jpg', as_grey=True),
-          imread('18.jpg', as_grey=True),
-          imread('19.jpg', as_grey=True),
-          imread('110.jpg', as_grey=True)
-          #imread('image1.png', as_grey=True),
-          # imread('image11.png', as_grey=True),
-          #imread('image111.png', as_grey=True)
-         ]
+
+# images = (imread('image.png', as_grey=True), imread('image2.png', as_grey=True))
+images = [
+    imread('static/lena_rotate2.jpg', as_grey=True),
+    imread('static/lena.jpg', as_grey=True),
+    imread('static/lena_scale.jpg', as_grey=True),
+    imread('static/lena_rotate180.jpg', as_grey=True),
+    imread('static/lena_rotate10.jpg', as_grey=True),
+    imread('static/lena_translate10.jpg', as_grey=True)
+    # imread('11.jpg', as_grey=True),
+    # imread('12.jpg', as_grey=True),
+    # imread('13.jpg', as_grey=True),
+    # imread('14.jpg', as_grey=True),
+    # imread('15.jpg', as_grey=True),
+    # imread('17.jpg', as_grey=True),
+    # imread('18.jpg', as_grey=True),
+    # imread('19.jpg', as_grey=True),
+    # imread('110.jpg', as_grey=True)
+    # imread('image1.png', as_grey=True),
+    # imread('image11.png', as_grey=True),
+    # imread('image111.png', as_grey=True)
+]
 
 '''images = [imread(im+'.jpg', as_grey=True) for im in [
     'c1', 'c2', 'c3', 'car1'
@@ -48,9 +56,10 @@ for i in range(len(images)):
     ax = axs[1]
     ax = ax[i]
     image = images[i]
-    theta = np.linspace(0., 180., max(image.shape), endpoint=False)
-    sinogram = radon(image, theta=theta, circle=True)
-    sinogram = autocorellation(sinogram)
+    # theta = np.linspace(0., 180., max(image.shape), endpoint=False)
+    # sinogram = radon(image, theta=theta, circle=True)
+    sinogram = radon(image)
+    '''sinogram = autocorellation(sinogram)
     sinogram = log_mapping(sinogram)
     #sinogram = numpy.abs(numpy.fft.fft2(sinogram))
     #sinogram = numpy.log(sinogram)
@@ -64,7 +73,7 @@ for i in range(len(images)):
     print(i, ",".join(["diff({})={}".format(i, diff(item, sinogram)) for i, item in enumerate(sing)]))
     # ax.imshow(sinogram)
     sinogram = numpy.array(sinogram)
-    sing.append(sinogram)
+    sing.append(sinogram)'''
     ax.imshow(sinogram, cmap=plt.cm.Greys_r, aspect='auto')
 
 fig.tight_layout()

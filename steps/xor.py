@@ -1,5 +1,7 @@
 from numba import jit
 import numpy
+
+
 @jit
 def xor(image1, image2):
     m = len(image2)

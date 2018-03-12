@@ -1,6 +1,6 @@
 from numba import jit, types
 import numpy
-
+from cmath import phase
 
 @jit(types.UniTuple(types.float64[:,:], 2)(types.complex128[:,:]), nopython=True)
 def interleaving(image):
@@ -15,5 +15,5 @@ def interleaving(image):
             # magnitudes[i, j] = x
             # angles[i, j] = y
             magnitudes[i,j] = numpy.sqrt(x**2 + y**2)
-            angles[i,j] = numpy.arctan2(y, x)
+            angles[i,j] = phase(image[i, j])
     return magnitudes, angles
