@@ -21,14 +21,8 @@ from numpy import abs, linspace
 from cmath import sqrt
 # images = (imread('image.png', as_grey=True), imread('image2.png', as_grey=True))
 images = [
-    #imread('../static/text1.jpg', as_grey=True),
-    #imread('../static/text2.jpg', as_grey=True),
-    imread('../static/lena.jpg', as_grey=True),
-    imread('../static/lena_translate10.jpg', as_grey=True),
-    imread('../static/lena_rotate180.jpg', as_grey=True),
-    imread('../static/lena_scale.jpg', as_grey=True),
-    #imread('../static/lena_square.jpg', as_grey=True),
-    #imread('../static/baboon_rotate180.jpg', as_grey=True),
+    imread('../static/text1.jpg', as_grey=True),
+    imread('../static/cor.jpg', as_grey=True),
 ]
 
 fig, axs = plt.subplots(5, len(images), figsize=(8, 4.5))
@@ -46,29 +40,13 @@ for i in range(len(images)):
     ax = ax[i]
     ax2 = axs[2]
     ax2 = ax2[i]
-    ax3 = axs[3]
-    ax3 = ax3[i]
-    ax4 = axs[4]
-    ax4 = ax4[i]
     image = images[i]
     # theta = np.linspace(0., 180., max(image.shape), endpoint=False)
     #theta = linspace(0, 180, sqrt(2).real*image.shape[0])
-    sinogram = radon(image, circle=False)
-    print(1, sinogram.shape)
+    sinogram = image
     sinogram2 = autocorellation(sinogram)
-    print(2, sinogram2.shape)
-    sinogram3 = log_mapping(sinogram2)
-    print(3, sinogram3.shape)
-    sinogram4 = fftpack.fft(sinogram3)
-    print(4, sinogram4.shape)
-    real, imaginary = interleaving(sinogram4)
-    real, imaginary = twodfilter(real), twodfilter(imaginary)
-    real, imaginary = trueshold(real), trueshold(imaginary)
-    sinogram4 = xor(real, imaginary)
     ax2.imshow(sinogram2, cmap=plt.cm.Greys_r, aspect='auto')
-    ax3.imshow(sinogram3, cmap=plt.cm.Greys_r, aspect='auto')
     ax.imshow(sinogram, cmap=plt.cm.Greys_r, aspect='auto')
-    ax4.imshow(sinogram4, cmap=plt.cm.Greys_r, aspect='auto')
 
 
 fig.tight_layout()

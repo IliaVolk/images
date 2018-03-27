@@ -1,40 +1,38 @@
-import numpy as np
+from numpy import array, zeros, abs, sum, log
 from numba import jit
-from math import log, sqrt, atan2
-from scipy.ndimage.interpolation import geometric_transform
-
-'''@jit
-def transform(coords, img, max_radius):
-    # Put coord[1] in the interval, [-pi, pi]
-    theta = 2 * np.pi * coords[1] / (img.shape[1] - 1.)
-
-    # Then map it to the interval [0, max_radius].
-    # radius = float(img.shape[0]-coords[0]) / img.shape[0] * max_radius
-    radius = max_radius * coords[0] / img.shape[0]
-
-    i = 0.5 * img.shape[0] - radius * np.sin(theta)
-    j = radius * np.cos(theta) + 0.5 * img.shape[1]
+from math import log, exp
+import numpy
+'''
+divider = 100
+@jit
+def transform(i, j):
+    a = exp(log(90).real / divider)
+    i = int(log(1 + i, a))
     return i, j
 
 @jit
 def log_mapping(img):
-    #Transform img to its polar coordinate representation
-#
- #   order: int, default 1
-  #      Specify the spline interpolation order.
-   #     High orders may be slow for large images.
-    # max_radius is the length of the diagonal
-    # from a corner to the mid-point of img.
-    max_radius = 0.5*np.linalg.norm( img.shape )
+    a = exp(log(90).real / divider)
+    i = int(log(img.shape[0], a).real)
+    res = zeros((i+1, img.shape[1]+1))
+    for i in range(img.shape[0]):
+        for j in range(img.shape[1]):
+            coords = transform(i, j)
+            res[coords] = img[i, j] / 2 + res[coords] / 2 \
+                if res[coords] else img[i, j]
 
+    res2 = []
+    for row in res:
+        if 0 != sum(abs(row)):
+            res2.append(row)
+    return array(res2)
+    #return numpy.log(1 + array(res2))
+'''
 
-
-    polar = geometric_transform(img, transform, extra_arguments=(img, max_radius))
-
-    return polar'''
 
 @jit
 def log_mapping(im):
-    im1 = 1+im
-    im2 = np.log(im1)
-    return np.log(im2)
+    k0 = numpy.min(im) + 0.001
+    print('k0 =', k0)
+    return k0*numpy.log(1 + im/k0)
+

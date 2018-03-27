@@ -58,7 +58,7 @@ for i in range(len(images)):
     image = images[i]
     # theta = np.linspace(0., 180., max(image.shape), endpoint=False)
     # sinogram = radon(image, theta=theta, circle=True)
-    sinogram = radon(image)
+    sinogram = radon(image, circle=False)
     '''sinogram = autocorellation(sinogram)
     sinogram = log_mapping(sinogram)
     #sinogram = numpy.abs(numpy.fft.fft2(sinogram))
