@@ -24,9 +24,12 @@ images = [
     #imread('../static/text1.jpg', as_grey=True),
     #imread('../static/text2.jpg', as_grey=True),
     imread('../static/lena.jpg', as_grey=True),
-    imread('../static/lena_translate10.jpg', as_grey=True),
+    imread('../static/lena_harshness.jpg', as_grey=True),
     imread('../static/lena_rotate180.jpg', as_grey=True),
-    imread('../static/lena_scale.jpg', as_grey=True),
+    #imread('../static/lena_translate10.jpg', as_grey=True),
+    #imread('../static/lena_translate10_2.jpg', as_grey=True),
+    #imread('../static/lena_rotate10.jpg', as_grey=True),
+    #imread('../static/lena_rotate10_noblack.jpg', as_grey=True),
     #imread('../static/lena_square.jpg', as_grey=True),
     #imread('../static/baboon_rotate180.jpg', as_grey=True),
 ]
@@ -59,7 +62,8 @@ for i in range(len(images)):
     print(2, sinogram2.shape)
     sinogram3 = log_mapping(sinogram2)
     print(3, sinogram3.shape)
-    sinogram4 = fftpack.fft(sinogram3)
+    sinogram4 = numpy.fft.fft2(sinogram3)
+    # sinogram4 = fftpack.fft2(sinogram3)
     print(4, sinogram4.shape)
     real, imaginary = interleaving(sinogram4)
     real, imaginary = twodfilter(real), twodfilter(imaginary)

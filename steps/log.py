@@ -29,10 +29,8 @@ def log_mapping(img):
     #return numpy.log(1 + array(res2))
 '''
 
-
+k0 = 0.001
 @jit
 def log_mapping(im):
-    k0 = numpy.min(im) + 0.001
-    print('k0 =', k0)
     return k0*numpy.log(1 + im/k0)
 

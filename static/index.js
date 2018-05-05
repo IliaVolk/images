@@ -15,7 +15,6 @@ data.forEach(item => {
         if (item.image !== item2.image) {
             const diff = compare(item.sign_data, item2.sign_data);
             item.diffs.push([item2.image, diff]);
-            // item2.diffs.push([item.image, diff]);
         }
     });
 });

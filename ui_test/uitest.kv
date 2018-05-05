@@ -1,18 +1,26 @@
-Root
-
-<Button>:
-    font_size: 40
-    color: 0, 1, 0, 1
-    size_hint: 0.3, 0.2
-
-
-<Root@FloatLayout>:
+BoxLayout:
+    size: root.size
+    orientation: 'vertical'
     Button:
-        text: 'Kivy'
-        pos_hint: {'x': 0, 'y': 0.5}
+        text: 'Button 1'
+        on_press: app.click
     Button:
-        text: 'Tutorials'
-        pos_hint: {'right': 1, 'top': 1}
+        text: 'Button 2'
+
+
+#<Button>:
+#    font_size: 40
+#    color: 0, 1, 0, 1
+#    size_hint: 0.3, 0.2
+
+
+#<Root@FloatLayout>:
+#    Button:
+#        text: 'Kivy'
+#        pos_hint: {'x': 0, 'y': 0.5}
+#    Button:
+#        text: 'Tutorials'
+#        pos_hint: {'right': 1, 'top': 1}
 
 #<Widgets>:
 #    Button:
