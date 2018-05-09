@@ -85,14 +85,17 @@ def choose_file(filters, cb, dirselect=True):
 def save_json_file(files, dirpath):
     report = generate_report(files, False)
     with open(os.path.join(dirpath, REPORT_FILENAME), 'w') as f:
-        try:
-            json.dump(report, f)
-        except Exception as e:
-            i = 1
+        json.dump(report, f)
+    return report
 
 
 class State:
     pass
+
+def set_main_image(image):
+    if isinstance(image['diffs'], list):
+        State.main_image.set_image(image)
+        State.similar_images.set_images(image['diffs'])
 
 
 class ImageButtonWithLabel(BoxLayout):
@@ -105,9 +108,7 @@ class ImageButtonWithLabel(BoxLayout):
         self.width = 200
 
         def pressed(button):
-            if isinstance(source['diffs'], list):
-                State.main_image.set_image(source)
-                State.similar_images.set_images(source['diffs'])
+            set_main_image(source)
 
         image = ImageButton(pressed, source=source['image'])
 
@@ -177,6 +178,8 @@ class ImagesColumn(BoxLayout):
 
     def set_images(self, images):
         self.images_list.set_images(images)
+        if len(images):
+            set_main_image(images[0])
 
 
 class AllImagesColumn(ImagesColumn):
@@ -184,7 +187,8 @@ class AllImagesColumn(ImagesColumn):
         super(AllImagesColumn, self).__init__()
         generate_report_button = Button(text='Generate report', size_hint_y=None, height=40)
         def load(files, dirpath):
-            save_json_file(files, dirpath)
+            report = save_json_file(files, dirpath)
+            State.all_images.set_images(report)
         def on_press(_):
             choose_file(['*.jpg', '*.png'], load)
         generate_report_button.bind(

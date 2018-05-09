@@ -4,7 +4,7 @@ from cmath import phase
 
 @jit(types.UniTuple(types.float64[:,:], 2)(types.complex128[:,:]), nopython=True)
 def interleaving(image):
-    n = 20
+    n = 21
     image = image[:n,:n]
     magnitudes = numpy.empty((n, n))
     angles = numpy.empty((n, n))

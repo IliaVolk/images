@@ -4,8 +4,7 @@ import numpy
 
 @jit
 def xor(image1, image2):
-    m = len(image2)
-    n = len(image2[0])
+    n, m = image1.shape
     result = numpy.empty((n, m))
     for i in range(n):
         for j in range(m):

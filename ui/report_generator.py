@@ -58,12 +58,15 @@ def generate_report(files, for_html=True):
             for d2 in results:
                 if d1 != d2:
                     diff = compare(d1['sign_data'], d2['sign_data'])
-                    item = {
-                        'text': '{} ({}%)'.format(d2['text'], diff/4),
-                        'image': d2['image'],
-                        'diffs': diff
-                    }
-                    d1['diffs'].append(item)
+                    if diff <= 100:
+                        diff = 100 - diff
+                        item = {
+                            'text': '{} ({}%)'.format(d2['text'], diff),
+                            'image': d2['image'],
+                            'diffs': diff
+                        }
+                        d1['diffs'].append(item)
         for d in results:
             d['diffs'].sort(key=lambda x: x['diffs'])
+            d['diffs'].reverse()
     return results

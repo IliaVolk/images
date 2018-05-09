@@ -1,6 +1,5 @@
 import numpy
 from numba import jit
-from scipy import signal
 
 
 @jit
@@ -15,5 +14,5 @@ def autocorellation(image):
             s1 = 0.0
             for s in range(l, m):
                 s1 += image[s, tetha]*image[s-l, tetha]
-            result[l,tetha] = s1 / s2 if s2 != 0 else 0
+            result[l, tetha] = s1 / s2 if s2 != 0 else 0
     return result

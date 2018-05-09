@@ -21,11 +21,11 @@ from numpy import abs, linspace
 from cmath import sqrt
 # images = (imread('image.png', as_grey=True), imread('image2.png', as_grey=True))
 images = [
-    imread('../static/text1.jpg', as_grey=True),
-    imread('../static/cor.jpg', as_grey=True),
+    imread('../static/lena.jpg', as_grey=True),
+    imread('../static/lena_rotate90.jpg', as_grey=True),
 ]
 
-fig, axs = plt.subplots(5, len(images), figsize=(8, 4.5))
+fig, axs = plt.subplots(4, len(images), figsize=(8, 4.5))
 for i in range(len(images)):
     ax = axs[0]
     ax = ax[i]
@@ -40,14 +40,15 @@ for i in range(len(images)):
     ax = ax[i]
     ax2 = axs[2]
     ax2 = ax2[i]
+    ax3 = axs[3]
+    ax3 = ax3[i]
     image = images[i]
-    # theta = np.linspace(0., 180., max(image.shape), endpoint=False)
-    #theta = linspace(0, 180, sqrt(2).real*image.shape[0])
-    sinogram = image
-    sinogram2 = autocorellation(sinogram)
+    sinogram, sinogram2 = interleaving(fftpack.fft2(image))
+    sinogram, sinogram2 = twodfilter(sinogram), twodfilter(sinogram2)
+    sinogram, sinogram2 = trueshold(sinogram), trueshold(sinogram2)
     ax2.imshow(sinogram2, cmap=plt.cm.Greys_r, aspect='auto')
     ax.imshow(sinogram, cmap=plt.cm.Greys_r, aspect='auto')
-
+    ax3.imshow(xor(sinogram, sinogram2), cmap=plt.cm.Greys_r, aspect='auto')
 
 fig.tight_layout()
 plt.show()
