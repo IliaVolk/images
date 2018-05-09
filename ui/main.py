@@ -64,7 +64,7 @@ def choose_file(filters, cb, dirselect=True):
     browser = FileBrowser(
         select_string='Select',
         filters=filters,
-        path='/home/ilya/PycharmProjects/images',
+        path='/home/illia/images',
         dirselect=dirselect)
     browser.bind(
         on_success=lambda instance: file_chosen(
