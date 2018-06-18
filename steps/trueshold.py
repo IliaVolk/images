@@ -3,6 +3,11 @@ import numpy
 
 @jit
 def trueshold(image):
+    '''
+    applies trueshold algorithm for given image
+    :param image: numpy.ndarray
+    :return: numpy.ndarray
+    '''
     result = numpy.empty(image.shape)
     n, m = image.shape
     for i in range(n):

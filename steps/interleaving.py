@@ -4,6 +4,11 @@ from cmath import phase
 
 @jit(types.UniTuple(types.float64[:,:], 2)(types.complex128[:,:]), nopython=True)
 def interleaving(image):
+    '''
+    computes interleaving for given image
+    :param image: numpy.ndarray
+    :return: (numpy.ndarray, numpy.ndarray)
+    '''
     n = 21
     image = image[:n,:n]
     magnitudes = numpy.empty((n, n))

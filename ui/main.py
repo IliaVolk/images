@@ -93,7 +93,7 @@ class State:
     pass
 
 def set_main_image(image):
-    if isinstance(image['diffs'], list):
+    if 'diffs' in image:
         State.main_image.set_image(image)
         State.similar_images.set_images(image['diffs'])
 

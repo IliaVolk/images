@@ -9,7 +9,7 @@ from skimage.transform import radon, rescale, rotate
 from skimage.color import rgb2gray
 import numpy
 import scipy.ndimage
-from steps.autocorellation import autocorellation
+from steps.autocorellation import autocorrelation
 from steps.interleaving import interleaving
 from steps.twodfilter import twodfilter
 from steps.trueshold import trueshold
@@ -58,7 +58,7 @@ for i in range(len(images)):
     #theta = linspace(0, 180, sqrt(2).real*image.shape[0])
     sinogram = radon(image, circle=False)
     print(1, sinogram.shape)
-    sinogram2 = autocorellation(sinogram)
+    sinogram2 = autocorrelation(sinogram)
     print(2, sinogram2.shape)
     sinogram3 = log_mapping(sinogram2)
     print(3, sinogram3.shape)

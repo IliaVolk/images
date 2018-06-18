@@ -3,7 +3,12 @@ from numba import jit
 
 
 @jit
-def autocorellation(image):
+def autocorrelation(image):
+    '''
+    :param image: numpy.ndarray
+    :return: npumpy.ndarray
+    computes autocorrelation by y axis for given image
+    '''
     result = numpy.empty(image.shape)
     m, n = image.shape
     for tetha in range(n):

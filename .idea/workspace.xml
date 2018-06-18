@@ -2,13 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33308221-bd5c-4af7-98fb-a009c81afd4d" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/static/bee1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/bee4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/bird1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/bird2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static2/bee1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static2/bee2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static2/bird1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static2/bird2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test1/lena_blur.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test1/lena_yellow.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test2/lena.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test2/lena_scale.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test3/lena.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test4/lena.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test4/lena_rotate10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test4/lena_rotate10_noblack.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test4/lena_rotate2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/radon_and_autocorellation.py" beforeDir="false" afterPath="$PROJECT_DIR$/radon_and_autocorellation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/reports.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/reports.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static2/reports.json" beforeDir="false" afterPath="$PROJECT_DIR$/static2/reports.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static2/lena.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/test1/lena.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static2/lena_harshness.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/test1/lena_harshness.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static2/lena_rotate180.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/test3/lena_rotate180.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static2/reports.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/steps/autocorellation.py" beforeDir="false" afterPath="$PROJECT_DIR$/steps/autocorellation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/steps/diff.py" beforeDir="false" afterPath="$PROJECT_DIR$/steps/diff.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/steps/interleaving.py" beforeDir="false" afterPath="$PROJECT_DIR$/steps/interleaving.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/steps/log.py" beforeDir="false" afterPath="$PROJECT_DIR$/steps/log.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/steps/trueshold.py" beforeDir="false" afterPath="$PROJECT_DIR$/steps/trueshold.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/steps/twodfilter.py" beforeDir="false" afterPath="$PROJECT_DIR$/steps/twodfilter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/steps/xor.py" beforeDir="false" afterPath="$PROJECT_DIR$/steps/xor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try2/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/try2/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/try2/main2.py" beforeDir="false" afterPath="$PROJECT_DIR$/try2/main2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui/report_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/report_generator.py" afterDir="false" />
@@ -30,8 +56,8 @@
     <SUITE FILE_PATH="coverage/images$checks.coverage" NAME="checks Coverage Results" MODIFIED="1509911303612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/images$ui_test.coverage" NAME="ui_test Coverage Results" MODIFIED="1523308223018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ui_test" />
     <SUITE FILE_PATH="coverage/images$all.coverage" NAME="all Coverage Results" MODIFIED="1523850690108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/images$main2.coverage" NAME="main2 Coverage Results" MODIFIED="1525905784173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/try2" />
-    <SUITE FILE_PATH="coverage/images$ui.coverage" NAME="ui Coverage Results" MODIFIED="1525905918743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ui" />
+    <SUITE FILE_PATH="coverage/images$main2.coverage" NAME="main2 Coverage Results" MODIFIED="1527391049915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/try2" />
+    <SUITE FILE_PATH="coverage/images$ui.coverage" NAME="ui Coverage Results" MODIFIED="1528961547122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ui" />
     <SUITE FILE_PATH="coverage/images$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1523357820680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/try2" />
     <SUITE FILE_PATH="coverage/images$app_with_kv.coverage" NAME="app_with_kv Coverage Results" MODIFIED="1523822465105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ui_test" />
   </component>
@@ -51,101 +77,63 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ui/main.py">
+      <file leaf-file-name="autocorellation.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/steps/autocorellation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="183" selection-start-line="183" selection-end-line="183" />
+            <state relative-caret-position="150">
+              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
               <folding>
-                <element signature="e#0#47#0" expanded="true" />
+                <element signature="e#0#12#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="report_generator.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ui/report_generator.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="37" column="39" lean-forward="true" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+      <file leaf-file-name="lena.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/lena.jpg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file leaf-file-name="diff.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/steps/diff.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-            </state>
-          </provider>
+      <file leaf-file-name="lena_blur.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/lena_blur.jpg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file leaf-file-name="interleaving.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/steps/interleaving.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
+      <file leaf-file-name="lena_rotate180.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/lena_rotate180.jpg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file leaf-file-name="trueshold.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/steps/trueshold.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
+      <file leaf-file-name="lena_square.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/lena_square.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="bird1.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/bird1.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="bird2.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/bird2.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="bee1.jpg" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/bee1.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="bee4.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/bee4.jpg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file leaf-file-name="xor.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/steps/xor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="twodfilter.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/steps/twodfilter.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/try2/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="64" column="16" lean-forward="true" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/try2/main2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
-              <folding>
-                <element signature="e#0#47#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="log.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/steps/log.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="135">
+              <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -221,18 +209,18 @@
         <option value="$PROJECT_DIR$/ui_test/app_with_kv.py" />
         <option value="$PROJECT_DIR$/all.py" />
         <option value="$PROJECT_DIR$/static/index.js" />
-        <option value="$PROJECT_DIR$/static2/reports.json" />
         <option value="$PROJECT_DIR$/try2/main.py" />
-        <option value="$PROJECT_DIR$/steps/trueshold.py" />
-        <option value="$PROJECT_DIR$/steps/log.py" />
-        <option value="$PROJECT_DIR$/steps/diff.py" />
-        <option value="$PROJECT_DIR$/ui/main.py" />
-        <option value="$PROJECT_DIR$/steps/autocorellation.py" />
-        <option value="$PROJECT_DIR$/steps/xor.py" />
         <option value="$PROJECT_DIR$/ui/report_generator.py" />
-        <option value="$PROJECT_DIR$/steps/interleaving.py" />
-        <option value="$PROJECT_DIR$/steps/twodfilter.py" />
+        <option value="$PROJECT_DIR$/ui/main.py" />
+        <option value="$PROJECT_DIR$/static2/reports.json" />
         <option value="$PROJECT_DIR$/try2/main2.py" />
+        <option value="$PROJECT_DIR$/steps/diff.py" />
+        <option value="$PROJECT_DIR$/steps/autocorellation.py" />
+        <option value="$PROJECT_DIR$/steps/interleaving.py" />
+        <option value="$PROJECT_DIR$/steps/log.py" />
+        <option value="$PROJECT_DIR$/steps/trueshold.py" />
+        <option value="$PROJECT_DIR$/steps/twodfilter.py" />
+        <option value="$PROJECT_DIR$/steps/xor.py" />
       </list>
     </option>
   </component>
@@ -252,10 +240,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="64" />
-    <option name="y" value="-11" />
-    <option name="width" value="1857" />
-    <option name="height" value="987" />
+    <option name="x" value="65" />
+    <option name="y" value="-4" />
+    <option name="width" value="1063" />
+    <option name="height" value="970" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -263,7 +251,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -274,7 +261,7 @@
             <path>
               <item name="images" type="b2602c69:ProjectViewProjectNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="steps" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="images" type="b2602c69:ProjectViewProjectNode" />
@@ -290,6 +277,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -297,12 +285,15 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/ui/main.py" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="PyScientificConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/static2" />
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/test4" />
+      <recent name="$PROJECT_DIR$/test3" />
+      <recent name="$PROJECT_DIR$/test2" />
+      <recent name="$PROJECT_DIR$/test1" />
+      <recent name="$PROJECT_DIR$/static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static" />
@@ -624,32 +615,31 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1319" height="970" extended-state="6" />
-    <editor active="true" />
+    <frame x="64" y="-11" width="1857" height="987" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.059366755" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32896304" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.34803337" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16025138" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.32896304" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18867925" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.36899862" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20784964" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.18931657" />
-      <window_info anchor="right" id="SciView" visible="true" weight="0.43047917" />
+      <window_info anchor="right" auto_hide="true" id="SciView" order="3" show_stripe_button="false" type="FLOATING" weight="0.8584071" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.42312276" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" id="Data View" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3292683" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Messages" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32867134" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -672,9 +662,9 @@
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/try2/main2.py</url>
-          <line>47</line>
-          <option name="timeStamp" value="102" />
+          <url>file://$PROJECT_DIR$/steps/autocorellation.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="103" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -687,7 +677,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="103" />
+      <option name="time" value="104" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -697,9 +687,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/head.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$USER_HOME$/.local/lib/python3.5/site-packages/scipy/ndimage/interpolation.py" />
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -722,12 +709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/autocorellation.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/radon.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file:///usr/lib/python3/dist-packages/apport_python_hook.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
@@ -736,9 +717,6 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.local/lib/python3.5/site-packages/matplotlib/image.py" />
-    <entry file="file://$PROJECT_DIR$/static/baboon.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharm2017.1/system/python_stubs/-1247971764/scipy/signal/sigtools.py" />
     <entry file="file://$USER_HOME$/.local/lib/python3.5/site-packages/scipy/signal/signaltools.py" />
     <entry file="file://$PROJECT_DIR$/file.py" />
@@ -766,18 +744,6 @@
       </provider>
     </entry>
     <entry file="file:///usr/local/lib/python3.5/dist-packages/skimage/util/dtype.py" />
-    <entry file="file://$PROJECT_DIR$/result2.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/baboon_harshness.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/lena_rotate10_noblack.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/lena_translate10_2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file:///usr/lib/python3/dist-packages/PIL/Image.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="33120">
@@ -808,9 +774,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static2/baboon.jpg" />
     <entry file="file://$PROJECT_DIR$/static2/baboon_harshness.jpg" />
-    <entry file="file://$PROJECT_DIR$/static2/reports.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file:///usr/local/lib/python3.5/dist-packages/fs/osfs.py" />
     <entry file="file:///usr/local/lib/python3.5/dist-packages/fs/opener/registry.py" />
     <entry file="file:///usr/lib/python3/dist-packages/kivy/app.py">
@@ -827,20 +790,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/steps/autocorellation.py">
+    <entry file="file://$PROJECT_DIR$/try2/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="660">
+          <caret line="64" column="16" lean-forward="true" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/report_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ui/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="183" selection-start-line="183" selection-end-line="183" />
+        <state relative-caret-position="1170">
+          <caret line="97" selection-start-line="97" selection-end-line="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static2/reports.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1065" lean-forward="true" selection-start-column="1065" selection-end-column="1065" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/try2/main2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
           </folding>
@@ -850,71 +831,78 @@
     <entry file="file://$PROJECT_DIR$/steps/diff.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/steps/trueshold.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/steps/log.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/steps/interleaving.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ui/report_generator.py">
+    <entry file="file://$PROJECT_DIR$/steps/log.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="37" column="39" lean-forward="true" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="480">
+          <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/steps/xor.py">
+    <entry file="file://$PROJECT_DIR$/steps/trueshold.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="105">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/steps/twodfilter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="90">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/try2/main2.py">
+    <entry file="file://$PROJECT_DIR$/steps/xor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="135">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/steps/autocorellation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
           <folding>
-            <element signature="e#0#47#0" expanded="true" />
+            <element signature="e#0#12#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/try2/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="64" column="16" lean-forward="true" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/static/lena.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/lena_blur.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/lena_rotate180.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/lena_square.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/bird1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/bird2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/bee4.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/bee1.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
 </project>

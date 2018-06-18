@@ -32,5 +32,10 @@ def log_mapping(img):
 k0 = 0.001
 @jit
 def log_mapping(im):
+    '''
+    computes log mapping for given image
+    :param im: numpy.ngarray
+    :return: numpy.ndarray
+    '''
     return k0*numpy.log(1 + im/k0)
 

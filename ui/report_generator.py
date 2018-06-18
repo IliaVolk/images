@@ -2,7 +2,7 @@ from skimage.io import imread, imsave
 import numpy
 from skimage.transform import radon
 
-from steps.autocorellation import autocorellation
+from steps.autocorellation import autocorrelation
 from steps.interleaving import interleaving
 from steps.twodfilter import twodfilter
 from steps.trueshold import trueshold
@@ -28,8 +28,8 @@ def generate_report(files, for_html=True):
     for i in range(len(images)):
         image = images[i]
         file = files[i]
-        sinogram = radon(image, circle=False)
-        sinogram = autocorellation(sinogram)
+        sinogram = radon(image, circle=True)
+        sinogram = autocorrelation(sinogram)
         sinogram = log_mapping(sinogram)
         sinogram = numpy.fft.fft2(sinogram)
         real, imaginary = interleaving(sinogram)
@@ -58,8 +58,8 @@ def generate_report(files, for_html=True):
             for d2 in results:
                 if d1 != d2:
                     diff = compare(d1['sign_data'], d2['sign_data'])
-                    if diff <= 100:
-                        diff = 100 - diff
+                    if diff <= 150:
+                        diff = round(100 - diff/150*100)
                         item = {
                             'text': '{} ({}%)'.format(d2['text'], diff),
                             'image': d2['image'],
@@ -69,4 +69,7 @@ def generate_report(files, for_html=True):
         for d in results:
             d['diffs'].sort(key=lambda x: x['diffs'])
             d['diffs'].reverse()
+            d.pop('sign_data')
+            for d in d['diffs']:
+                d.pop('diffs')
     return results
